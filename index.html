@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap"
+    rel="stylesheet"
+  />
+  <head>
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Awesome imaginary website survey form</h1>
+    </header>
+    <p class="thanks" id="description">
+      Thank you for helping us improve and be even more awesome every day with
+      your comments!
+    </p>
+    <form id="survey-form">
+      <fieldset id="required">
+        <div>
+          <label id="name-label" for="name"
+            >Enter your name:*
+            <input
+              id="name"
+              name="name"
+              type="text"
+              placeholder="Judit"
+              required
+            />
+          </label>
+        </div>
+        <div>
+          <label id="email-label" for="email"
+            >Enter your email:*
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="judit@awesome-web.com"
+              required
+            />
+          </label>
+        </div>
+        <div>
+          <label id="number-label" for="number"
+            >Enter your age (years):*
+            <input
+              id="number"
+              name="number"
+              type="number"
+              min="13"
+              max="120"
+              placeholder="29"
+              required
+            />
+          </label>
+        </div>
+      </fieldset>
+      <fieldset id="non-required">
+        <div>
+          <p class="question">How did you hear about us?</p>
+          <select id="dropdown" name="dropdown">
+            <option value="">(select one)</option>
+            <option value="search-engine">Search Engine</option>
+            <option value="social-network">Social Network</option>
+            <option value="recommendation">Recommendation</option>
+          </select>
+        </div>
+        <div>
+          <p class="question">Would you recommend us to your friends?</p>
+          <label>
+            <input
+              id="yes"
+              type="radio"
+              name="would-you-recommend-us"
+              value="yes"
+              class="inline"
+            />
+            Definitely!
+          </label>
+        </div>
+        <div>
+          <label>
+            <input
+              id="maybe"
+              type="radio"
+              name="would-you-recommend-us"
+              value="maybe"
+              class="inline"
+            />
+            Maaybe?
+          </label>
+        </div>
+        <div>
+          <label>
+            <input
+              id="no"
+              type="radio"
+              name="would-you-recommend-us"
+              value="no"
+              class="inline"
+            />
+            Ugh, nope
+          </label>
+        </div>
+        <div>
+          <p class="question">
+            What awesome content would you like to see more often?
+          </p>
+          <label>
+            <input
+              type="checkbox"
+              name="prefer"
+              class="inline"
+              value="silly-cats"
+            />Cats doing silly things
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              name="prefer"
+              class="inline"
+              value="cute-baby-animals"
+            />Cute baby animals
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              name="prefer"
+              class="inline"
+              value="user-drawings"
+            />Awesome drawings made by our users
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              name="prefer"
+              class="inline"
+              value="printable-color-by-numbers"
+            />Printable color by numbers
+          </label>
+        </div>
+        <div>
+          <p class="question">
+            This is your chance, tell us exactly what we need to improve!
+          </p>
+          <label>
+            <textarea
+              id="textarea"
+              type="textarea"
+              rows="3"
+              placeholder="More cute elephants!"
+            ></textarea>
+          </label>
+        </div>
+      </fieldset>
+      <button id="submit" type="submit" value="Submit">Submit</button>
+    </form>
+    <footer>
+      <div>
+        <p class="footer">Keep the awesomeness up</p>
+      </div>
+    </footer>
+  </body>
+</html>
